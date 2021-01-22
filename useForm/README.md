@@ -1,9 +1,8 @@
-#useFetch
+#useForm
 
-Ejm: 
+Ejm:
 ```
-const url = 'endpoint de una api';
-const { data : null, loading: true, error: null } = useFetch( url );
-
+const initialForm = {name: '', age: 0, email : ''}
+const [values, handleInputChange, reset] = useForm(initialForm)
 
 ```
